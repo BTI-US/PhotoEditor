@@ -1,6 +1,6 @@
 # PhotoEditor
 
-![Github Action](https://github.com/burhanrashid52/PhotoEditor/actions/workflows/app_build_and_test.yml/badge.svg)
+![Github Action](https://github.com/BTI-US/PhotoEditor/actions/workflows/app_build_and_test.yml/badge.svg)
 [![Downloads](https://img.shields.io/badge/Download-3.0.2-blue.svg)](https://search.maven.org/artifact/com.burhanrashid52/photoeditor/3.0.2/aar) ![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg) [![JavaDoc](https://img.shields.io/badge/JavaDoc-PhotoEditor-blue.svg)](https://burhanrashid52.github.io/PhotoEditor/) [![Uplabs](https://img.shields.io/badge/Uplabs-PhotoEditor-orange.svg)](https://www.uplabs.com/posts/photoeditor)
 [![AndroidArsenal](https://img.shields.io/badge/Android%20Arsenal-PhotoEditor-blue.svg)](https://android-arsenal.com/details/1/6736)
 [![AndroidDevDigest](https://img.shields.io/badge/AndroidDev%20Digest-%23185-brightgreen.svg)](https://www.androiddevdigest.com/digest-185)
@@ -9,15 +9,11 @@
 [![Mindorks](https://img.shields.io/badge/Mindorks%20Newsletter-%234-ff69b4.svg)](https://mindorks.com/newsletter/edition/4)
 
 
-A Photo Editor library with simple, easy support for image editing using Paints, Text, Filters, Emoji and Sticker like stories.
+A Photo Editor library with simple, easy support for image editing using Paints, Text, Filters, Emoji and Sticker-like stories.
 
-[Download link](https://drive.google.com/drive/folders/1pw_iZ_PIyOSJzCWR_uLnoe7PKCDTgosp?usp=sharing)
+[Download link](https://f005.backblazeb2.com/file/BTI-Platform/PhotoEditor-v.1.1.4.apk)
 
 ![](https://i.imgur.com/ZYtLHTZ.png)
-
-<a href="https://www.producthunt.com/posts/photoeditor-2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-photoeditor-2" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=297508&theme=light" alt="PhotoEditor - Android SDK with simple, easy support for image editing. | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
-
-<a href="https://www.buymeacoffee.com/burhanrashid52" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
 ## Features
 
@@ -134,7 +130,7 @@ val shapeBuilder = ShapeBuilder()
 
 photoEditor.setShape(mShapeBuilder)
 ```
-For more details check [ShapeBuilder](https://github.com/burhanrashid52/PhotoEditor/blob/master/photoeditor/src/main/java/ja/burhanrashid52/photoeditor/shape/ShapeBuilder.kt).
+For more details check [ShapeBuilder](https://github.com/BTI-US/PhotoEditor/blob/master/photoeditor/src/main/java/ja/burhanrashid52/photoeditor/shape/ShapeBuilder.kt).
 
 ## Filter Effect
 We can apply inbuild filter to the source images using 
@@ -145,7 +141,7 @@ We can apply inbuild filter to the source images using
 
 We can also apply custom effect using `Custom.Builder`
 
-For more details check [Custom Filters](https://github.com/burhanrashid52/PhotoEditor/wiki/Filter-Effect)
+For more details check [Custom Filters](https://github.com/BTI-US/PhotoEditor/wiki/Filter-Effect)
 
 
 
@@ -246,16 +242,10 @@ You can also save an image to a file from Java. We need to provide a file with c
                 });
 ```
 
-For more details see [Saving](https://github.com/burhanrashid52/PhotoEditor/wiki/Saving)
+For more details see [Saving](https://github.com/BTI-US/PhotoEditor/wiki/Saving)
 
 ## How to contribute?
-* Check out contribution guidelines 👉[CONTRIBUTING.md](https://github.com/burhanrashid52/PhotoEditor/blob/master/CONTRIBUTING.md)
-
-
-## Questions?🤔
-Hit me on twitter [![Twitter](https://img.shields.io/badge/Twitter-%40burhanrashid52-blue.svg)](https://twitter.com/burhanrashid52)
-[![Medium](https://img.shields.io/badge/Medium-%40burhanrashid52-brightgreen.svg)](https://medium.com/@burhanrashid52)
-[![Facebook](https://img.shields.io/badge/Facebook-Burhanuddin%20Rashid-blue.svg)](https://www.facebook.com/Bursid)
+* Check out contribution guidelines 👉[CONTRIBUTING.md](https://github.com/BTI-US/PhotoEditor/blob/master/CONTRIBUTING.md)
 
 ## FAQ
 <details><summary>Can I use this library in my app for free?</summary>
@@ -299,33 +289,9 @@ No. Currently, the focus is on making the android library better. We don't have 
 </p>
 </details>
 
-### Who is using PhotoEditor?
-1. [Pixxo](https://play.google.com/store/apps/details?id=com.pixxo.breezil.pixxo)
-2. [Couple Blog: Long distance](https://play.google.com/store/apps/details?id=com.coupleblog)
-3. [Screenshot Tile (NoRoot)](https://f-droid.org/packages/com.github.cvzi.screenshottile/)
-
-**Note**: I will be happy to add your app to the list. Please reach out to me with details. You know how to reach me :)
-
-
-## Credits
-This project is inspired from [PhotoEditorSDK](https://github.com/eventtus/photo-editor-android)
-
-## Buy a cup of coffee
-If you found this project helpful or you learned something from the source code and want to thank me, consider buying me a cup of ☕️
-[BuyMeACoffee](https://www.buymeacoffee.com/burhanrashid52)
-
-<a href="https://www.producthunt.com/posts/photoeditor-2?utm_source=badge-review&utm_medium=badge&utm_souce=badge-photoeditor-2#discussion-body" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/review.svg?post_id=297508&theme=light" alt="PhotoEditor - Android SDK with simple, easy support for image editing. | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
-
-## Lesson Learned from building successful android library PhotoEditor: Droidcon Berlin 2021
-
-[![Lesson Learned from building successful android library PhotoEditor](https://burhanrashid52.com/wp-content/uploads/2021/11/246719409_10220774611897971_6342954485444508610_n-940x510.jpg)](https://player.vimeo.com/video/643904719 "Lesson Learned from building successful android library PhotoEditor")
-
-### [Open source Support](https://jb.gg/OpenSourceSupport) by [JetBrains](https://www.jetbrains.com)
-
-
 ## MIT License
 
-Copyright (c) 2022 Burhanuddin Rashid
+Copyright (c) 2024 BTI Platform
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
