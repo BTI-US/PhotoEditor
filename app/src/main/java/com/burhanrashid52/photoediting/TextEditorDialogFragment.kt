@@ -30,10 +30,29 @@ class TextEditorDialogFragment : DialogFragment() {
     private var mColorCode = 0
     private var mTextEditorListener: TextEditorListener? = null
 
+    /**
+     * This method is used to set the StickerListener for this fragment.
+     * The StickerListener is notified when a sticker is clicked.
+     *
+     * @param stickerListener The StickerListener to be set.
+     */
     interface TextEditorListener {
+        /**
+         * This method is called when text editing is done.
+         * It takes two parameters:
+         * - inputText: The text that was inputted.
+         * - colorCode: The color code of the text.
+         *
+         * @param inputText The text that was inputted.
+         * @param colorCode The color code of the text.
+         */
         fun onDone(inputText: String, colorCode: Int)
     }
 
+    /**
+     * This method is called when the Fragment is visible to the user and actively running.
+     * It sets the dialog to be full screen and with a transparent background.
+     */
     override fun onStart() {
         super.onStart()
         val dialog = dialog
@@ -46,6 +65,15 @@ class TextEditorDialogFragment : DialogFragment() {
         }
     }
 
+    /**
+     * This method is called to create the view hierarchy associated with the fragment.
+     * It inflates the layout defined in R.layout.add_text_dialog into the provided container.
+     *
+     * @param inflater The LayoutInflater object that can be used to inflate any views in the fragment.
+     * @param container If non-null, this is the parent view that the fragment's UI should be attached to.
+     * @param savedInstanceState If non-null, this fragment is being re-constructed from a previous saved state as given here.
+     * @return Return the View for the fragment's UI, or null.
+     */
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -54,6 +82,14 @@ class TextEditorDialogFragment : DialogFragment() {
         return inflater.inflate(R.layout.add_text_dialog, container, false)
     }
 
+    /**
+     * This method is called immediately after onCreateView(LayoutInflater, ViewGroup, Bundle) has returned, but before any saved state has been restored in to the view.
+     * This gives subclasses a chance to initialize themselves once they know their view hierarchy has been completely created.
+     * The fragment's view hierarchy is not however attached to its parent at this point.
+     *
+     * @param view The View returned by onCreateView(LayoutInflater, ViewGroup, Bundle).
+     * @param savedInstanceState If non-null, this fragment is being re-constructed from a previous saved state as given here.
+     */
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -101,7 +137,12 @@ class TextEditorDialogFragment : DialogFragment() {
         }
     }
 
-    //Callback to listener if user is done with text editing
+    /**
+     * This method is used to set the TextEditorListener for this fragment.
+     * The TextEditorListener is notified when text editing is done.
+     *
+     * @param textEditorListener The TextEditorListener to be set.
+     */
     fun setOnTextEditorListener(textEditorListener: TextEditorListener) {
         mTextEditorListener = textEditorListener
     }
@@ -111,8 +152,21 @@ class TextEditorDialogFragment : DialogFragment() {
         const val EXTRA_INPUT_TEXT = "extra_input_text"
         const val EXTRA_COLOR_CODE = "extra_color_code"
 
-        //Show dialog with provide text and text color
-        //Show dialog with default text input as empty and text color white
+        /**
+         * This method is used to display the TextEditorDialogFragment.
+         * It takes three parameters:
+         * - appCompatActivity: The AppCompatActivity where the fragment is to be shown.
+         * - inputText: The initial text to be displayed in the text editor. It is an optional parameter with a default value of an empty string.
+         * - colorCode: The initial color of the text. It is an optional parameter with a default value of white.
+         *
+         * The method creates a new instance of TextEditorDialogFragment, sets its arguments, and displays it.
+         * It returns the created instance of TextEditorDialogFragment.
+         *
+         * @param appCompatActivity The AppCompatActivity where the fragment is to be shown.
+         * @param inputText The initial text to be displayed in the text editor.
+         * @param colorCode The initial color of the text.
+         * @return The created instance of TextEditorDialogFragment.
+         */
         @JvmOverloads
         fun show(
             appCompatActivity: AppCompatActivity,
