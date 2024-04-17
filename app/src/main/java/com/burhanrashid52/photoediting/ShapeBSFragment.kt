@@ -13,6 +13,9 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import ja.burhanrashid52.photoeditor.shape.ShapeType
 
 class ShapeBSFragment : BottomSheetDialogFragment(), SeekBar.OnSeekBarChangeListener {
+    // Nullable Properties object for handling property changes.
+    // This object can be set using the setPropertiesChangeListener method.
+    // It is initially null and is used to notify when a property (color, opacity, shape size, shape type) changes in the ShapeBSFragment.
     private var mProperties: Properties? = null
 
     /**
@@ -137,10 +140,10 @@ class ShapeBSFragment : BottomSheetDialogFragment(), SeekBar.OnSeekBarChangeList
     }
 
     /**
-     * This method is used to set the TextEditorListener for this fragment.
-     * The TextEditorListener is notified when text editing is done.
+     * Sets the PropertiesChangeListener for this fragment.
+     * The PropertiesChangeListener is notified when properties related to shapes are changed.
      *
-     * @param textEditorListener The TextEditorListener to be set.
+     * @param properties The PropertiesChangeListener to be set. This can be null.
      */
     fun setPropertiesChangeListener(properties: Properties?) {
         mProperties = properties

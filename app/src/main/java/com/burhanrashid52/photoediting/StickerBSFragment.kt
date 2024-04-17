@@ -21,7 +21,11 @@ import com.bumptech.glide.request.target.CustomTarget
 import com.bumptech.glide.request.transition.Transition
 
 class StickerBSFragment : BottomSheetDialogFragment() {
+    // Nullable StickerListener object for handling sticker click events.
+    // This object can be set using the setStickerListener method.
+    // It is initially null and is used to notify when a sticker is clicked in the StickerAdapter.
     private var mStickerListener: StickerListener? = null
+
     /**
      * This method is used to set the StickerListener for this fragment.
      * The StickerListener is notified when a sticker is clicked.

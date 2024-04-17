@@ -11,6 +11,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.burhanrashid52.photoediting.ColorPickerAdapter.OnColorPickerClickListener
 
 class PropertiesBSFragment : BottomSheetDialogFragment(), SeekBar.OnSeekBarChangeListener {
+    // Nullable Properties object for handling property changes.
+    // This object can be set using the setPropertiesChangeListener method.
+    // It is initially null and is used to notify when a property (color, opacity, shape size) changes.
     private var mProperties: Properties? = null
 
     /**
@@ -83,6 +86,12 @@ class PropertiesBSFragment : BottomSheetDialogFragment(), SeekBar.OnSeekBarChang
         rvColor.setHasFixedSize(true)
         val colorPickerAdapter = activity?.let { ColorPickerAdapter(it) }
         colorPickerAdapter?.setOnColorPickerClickListener(object : OnColorPickerClickListener {
+            /**
+             * This method is triggered when a color is picked from the color picker.
+             * If the Properties object (mProperties) is not null, it dismisses the bottom sheet dialog and calls the onColorChanged method of the mProperties object.
+             *
+             * @param colorCode The color code of the color that was picked.
+             */
             override fun onColorPickerClickListener(colorCode: Int) {
                 if (mProperties != null) {
                     dismiss()

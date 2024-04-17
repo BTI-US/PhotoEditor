@@ -23,11 +23,19 @@ import com.burhanrashid52.photoediting.ColorPickerAdapter.OnColorPickerClickList
  * Created by Burhanuddin Rashid on 1/16/2018.
  */
 class TextEditorDialogFragment : DialogFragment() {
-
+    // Late-initialized EditText object for adding text. This object is initialized in the onViewCreated method.
     private lateinit var mAddTextEditText: EditText
+
+    // Late-initialized TextView object for the "Done" text. This object is initialized in the onViewCreated method.
     private lateinit var mAddTextDoneTextView: TextView
+
+    // Late-initialized InputMethodManager object for managing the soft input window. This object is initialized in the onViewCreated method.
     private lateinit var mInputMethodManager: InputMethodManager
+
+    // Integer variable for storing the color code. It is initialized to 0 and updated when a color is picked from the color picker.
     private var mColorCode = 0
+
+    // TextEditorListener object for notifying when text editing is done. It can be null and is set using the setOnTextEditorListener method.
     private var mTextEditorListener: TextEditorListener? = null
 
     /**
