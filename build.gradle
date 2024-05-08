@@ -2,7 +2,7 @@
 apply plugin: 'io.codearte.nexus-staging'
 
 buildscript {
-    ext.kotlin_version = '1.8.10'
+    ext.kotlin_version = '1.9.23'
 
     repositories {
         google()
@@ -10,7 +10,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:8.3.2'
-        classpath "com.github.dcendents:android-maven-gradle-plugin:2.0"
+        classpath "com.github.dcendents:android-maven-gradle-plugin:2.1"
         classpath 'io.codearte.gradle.nexus:gradle-nexus-staging-plugin:0.30.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
